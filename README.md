@@ -58,6 +58,24 @@ The calculator runs entirely in the browser and does not require a backend, fram
 
 ---
 
+Freedom-Path-FIRE-Calculator-/
+│
+├── assets/
+│   └── logo.svg
+│
+├── screenshot/
+│   ├── fire-home.png
+│   ├── fire-inputs.png
+│   ├── fire-results.png
+│   └── fire-scenarios.png
+│
+├── README.md
+├── calculator.js
+├── index.html
+├── script.js
+└── style.css
+---
+
 ## How the Project Works
 
 The user enters a set of financial assumptions such as:
