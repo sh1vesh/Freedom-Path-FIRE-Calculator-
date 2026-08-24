@@ -1,60 +1,76 @@
-# FreedomPath
+# FreedomPath — FIRE Calculator
 
-A modern financial independence / FIRE planner built with plain HTML, CSS, and JavaScript.
+FreedomPath is a browser-based financial independence planner built with **HTML, CSS, and vanilla JavaScript**.
+
+It helps estimate how much money may be needed for financial independence, when that target could be reached, and how different assumptions around investing, expenses, inflation, returns, and withdrawal rates affect the outcome.
+
+The project runs entirely in the browser and does not require a backend, framework, npm setup, or external database.
+
+---
+
+## Project Preview
+
+### Dashboard Overview
+
+![FreedomPath Dashboard](./screenshots/fire-home.png)
+
+### Financial Inputs
+
+![FreedomPath Inputs](./screenshots/fire-inputs.png)
+
+### FIRE Results & Projection
+
+![FreedomPath Results](./screenshots/fire-results.png)
+
+### Scenario Comparison
+
+![FreedomPath Scenarios](./screenshots/fire-scenarios.png)
+
+---
 
 ## Features
 
-- FIRE / freedom number calculation
+- FIRE / financial independence target calculation
 - Estimated financial independence age
-- Current FI progress
-- Projected corpus at target age
-- Monthly passive income estimate
-- Lean FIRE / Freedom FIRE / Fat FIRE targets
-- Conservative / Balanced / Aggressive scenarios
-- Wealth projection chart
-- "Freedom Accelerator" comparison
-- Indian lakh/crore formatting
+- Current FI progress percentage
+- Projected portfolio value at target age
+- Estimated monthly passive income
+- Lean FIRE target
+- Freedom FIRE target
+- Fat FIRE target
+- Conservative scenario
+- Balanced scenario
+- Aggressive scenario
+- Wealth projection visualization
+- Freedom Accelerator comparison
+- Inflation-adjusted FIRE projections
+- Safe withdrawal rate adjustment
+- Indian lakh and crore number formatting
+- Automatic recalculation when inputs change
 - LocalStorage persistence
-- Responsive desktop/mobile layout
+- Reset plan option
+- Responsive desktop and mobile layout
 
-## Tech Stack
+---
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- LocalStorage
+## How It Works
 
-No framework, npm, or backend is required.
+FreedomPath uses a set of financial assumptions provided by the user:
 
-## Run Locally
+- Current age
+- Target retirement age
+- Current investments
+- Monthly investment amount
+- Monthly expenses
+- Expected annual investment return
+- Inflation rate
+- Safe withdrawal rate
 
-Open `index.html` directly in your browser, or use VS Code Live Server.
+The calculator then estimates a target FIRE corpus and simulates portfolio growth over time.
 
-```bash
-cd freedom-path
-python -m http.server 5500
-```
-
-Then open:
-
-```text
-http://localhost:5500
-```
-
-## Project Structure
+A simplified FIRE target can be represented as:
 
 ```text
-freedom-path/
-├── assets/
-│   └── logo.svg
-├── screenshots/
-├── calculator.js
-├── index.html
-├── script.js
-├── style.css
-└── README.md
-```
-
-## Important
-
-This project is for educational planning and demonstration purposes only. It is not financial advice.
+Annual Expenses
+----------------
+Withdrawal Rate
