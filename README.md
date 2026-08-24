@@ -1,1 +1,1 @@
-# Telegram-Community-Management-Tool
+# Freedom Path (FIRE Calculator)
