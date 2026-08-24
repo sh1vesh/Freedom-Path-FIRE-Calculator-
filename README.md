@@ -1,10 +1,15 @@
 # FreedomPath — FIRE Calculator
 
-FreedomPath is a browser-based financial independence planner built with **HTML, CSS, and vanilla JavaScript**.
+FreedomPath is a browser-based **Financial Independence / FIRE calculator** built using **HTML, CSS, and vanilla JavaScript**.
 
-It helps estimate how much money may be needed for financial independence, when that target could be reached, and how different assumptions around investing, expenses, inflation, returns, and withdrawal rates affect the outcome.
+The project helps users estimate:
 
-The project runs entirely in the browser and does not require a backend, framework, npm setup, or external database.
+- how much money they may need to become financially independent
+- the age at which they may reach financial independence
+- how their current investments could grow over time
+- how changes in expenses, returns, inflation, and monthly investing affect the result
+
+The calculator runs entirely in the browser and does not require a backend, framework, npm setup, or database.
 
 ---
 
@@ -30,47 +35,45 @@ The project runs entirely in the browser and does not require a backend, framewo
 
 ## Features
 
-- FIRE / financial independence target calculation
-- Estimated financial independence age
-- Current FI progress percentage
-- Projected portfolio value at target age
+- FIRE / Financial Independence target calculation
+- Estimated FI age
+- Current FIRE progress percentage
+- Projected portfolio value
 - Estimated monthly passive income
-- Lean FIRE target
-- Freedom FIRE target
-- Fat FIRE target
+- Lean FIRE calculation
+- Freedom FIRE calculation
+- Fat FIRE calculation
 - Conservative scenario
 - Balanced scenario
 - Aggressive scenario
-- Wealth projection visualization
+- Wealth growth visualization
 - Freedom Accelerator comparison
-- Inflation-adjusted FIRE projections
-- Safe withdrawal rate adjustment
-- Indian lakh and crore number formatting
-- Automatic recalculation when inputs change
-- LocalStorage persistence
-- Reset plan option
-- Responsive desktop and mobile layout
+- Inflation-adjusted projections
+- Adjustable safe withdrawal rate
+- Indian lakh and crore formatting
+- Automatic recalculation when values change
+- LocalStorage support
+- Reset Plan functionality
+- Responsive desktop layout
 
 ---
 
-## How It Works
+## How the Project Works
 
-FreedomPath uses a set of financial assumptions provided by the user:
+The user enters a set of financial assumptions such as:
 
 - Current age
 - Target retirement age
 - Current investments
-- Monthly investment amount
+- Monthly investment
 - Monthly expenses
-- Expected annual investment return
-- Inflation rate
+- Expected annual return
+- Inflation
 - Safe withdrawal rate
 
-The calculator then estimates a target FIRE corpus and simulates portfolio growth over time.
+The application then calculates a FIRE target and simulates portfolio growth year by year.
 
-A simplified FIRE target can be represented as:
+A simplified FIRE calculation is:
 
 ```text
-Annual Expenses
-----------------
-Withdrawal Rate
+FIRE Number = Annual Expenses / Safe Withdrawal Rate
