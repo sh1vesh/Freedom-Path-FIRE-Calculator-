@@ -57,7 +57,7 @@ The calculator runs entirely in the browser and does not require a backend, fram
 - Responsive desktop layout
 
 ---
-
+```text
 Freedom-Path-FIRE-Calculator-/
 │
 ├── assets/
@@ -74,6 +74,7 @@ Freedom-Path-FIRE-Calculator-/
 ├── index.html
 ├── script.js
 └── style.css
+```
 ---
 
 ## How the Project Works
