@@ -12,19 +12,19 @@ The project runs entirely in the browser and does not require a backend, framewo
 
 ### Dashboard Overview
 
-![FreedomPath Dashboard](./screenshots/fire-home.png)
+![FreedomPath Dashboard](./screenshot/fire-home.png)
 
 ### Financial Inputs
 
-![FreedomPath Inputs](./screenshots/fire-inputs.png)
+![FreedomPath Inputs](./screenshot/fire-inputs.png)
 
 ### FIRE Results & Projection
 
-![FreedomPath Results](./screenshots/fire-results.png)
+![FreedomPath Results](./screenshot/fire-results.png)
 
 ### Scenario Comparison
 
-![FreedomPath Scenarios](./screenshots/fire-scenarios.png)
+![FreedomPath Scenarios](./screenshot/fire-scenarios.png)
 
 ---
 
