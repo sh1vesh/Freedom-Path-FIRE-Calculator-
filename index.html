@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="FreedomPath is a modern financial independence planner for estimating FIRE targets, projected FI age, and wealth milestones."
+  />
+  <title>FreedomPath | Financial Independence Planner</title>
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="./assets/logo.svg" alt="FreedomPath logo" class="brand-logo" />
+      <div>
+        <h1>FreedomPath</h1>
+        <p>Find out when work becomes optional.</p>
+      </div>
+    </div>
+
+    <button id="resetBtn" class="ghost-btn" type="button">Reset Plan</button>
+  </header>
+
+  <main class="app-shell">
+    <section class="panel inputs-panel">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR PLAN</span>
+        <h2>Build your freedom roadmap</h2>
+        <p>Adjust the assumptions below and see how your financial independence timeline changes.</p>
+      </div>
+
+      <form id="fireForm" class="form-grid">
+        <label>
+          <span>Current age</span>
+          <input id="currentAge" type="number" min="18" max="70" value="25" />
+        </label>
+
+        <label>
+          <span>Target retirement age</span>
+          <input id="targetAge" type="number" min="25" max="80" value="45" />
+        </label>
+
+        <label>
+          <span>Current investments (₹)</span>
+          <input id="currentCorpus" type="number" min="0" step="10000" value="1000000" />
+        </label>
+
+        <label>
+          <span>Monthly investment (₹)</span>
+          <input id="monthlyInvestment" type="number" min="0" step="1000" value="50000" />
+        </label>
+
+        <label>
+          <span>Monthly expenses (₹)</span>
+          <input id="monthlyExpenses" type="number" min="0" step="1000" value="60000" />
+        </label>
+
+        <label>
+          <span>Expected annual return (%)</span>
+          <input id="annualReturn" type="number" min="0" max="30" step="0.1" value="11" />
+        </label>
+
+        <label>
+          <span>Inflation (%)</span>
+          <input id="inflation" type="number" min="0" max="20" step="0.1" value="6" />
+        </label>
+
+        <label>
+          <span>Safe withdrawal rate (%)</span>
+          <input id="withdrawalRate" type="number" min="1" max="10" step="0.1" value="4" />
+        </label>
+      </form>
+
+      <div class="scenario-strip">
+        <button class="scenario-btn" data-scenario="conservative" type="button">Conservative</button>
+        <button class="scenario-btn active" data-scenario="balanced" type="button">Balanced</button>
+        <button class="scenario-btn" data-scenario="aggressive" type="button">Aggressive</button>
+      </div>
+    </section>
+
+    <section class="panel results-panel">
+      <div class="score-card">
+        <span class="eyebrow">FREEDOM SCORE</span>
+        <div class="score-row">
+          <div>
+            <strong id="fiAge" class="hero-number">—</strong>
+            <span>Estimated FI age</span>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-track">
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <span id="progressLabel">0% funded</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="metric-grid">
+        <article class="metric-card">
+          <span>Freedom Number</span>
+          <strong id="fireNumber">₹0</strong>
+        </article>
+        <article class="metric-card">
+          <span>Projected Corpus</span>
+          <strong id="projectedCorpus">₹0</strong>
+        </article>
+        <article class="metric-card">
+          <span>Years Remaining</span>
+          <strong id="yearsRemaining">—</strong>
+        </article>
+        <article class="metric-card">
+          <span>Monthly Passive Income</span>
+          <strong id="passiveIncome">₹0</strong>
+        </article>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-header">
+          <div>
+            <span class="eyebrow">WEALTH JOURNEY</span>
+            <h3>Projected portfolio growth</h3>
+          </div>
+          <span id="chartSummary" class="muted"></span>
+        </div>
+        <div id="wealthChart" class="wealth-chart" aria-label="Projected wealth chart"></div>
+      </div>
+
+      <div class="fire-modes">
+        <article>
+          <span>Lean FIRE</span>
+          <strong id="leanFire">₹0</strong>
+          <small>75% of current lifestyle</small>
+        </article>
+        <article class="featured">
+          <span>Freedom FIRE</span>
+          <strong id="standardFire">₹0</strong>
+          <small>Your current lifestyle target</small>
+        </article>
+        <article>
+          <span>Fat FIRE</span>
+          <strong id="fatFire">₹0</strong>
+          <small>150% of current lifestyle</small>
+        </article>
+      </div>
+
+      <div class="accelerator-card">
+        <span class="eyebrow">FREEDOM ACCELERATOR</span>
+        <h3 id="acceleratorTitle">Small changes can move your FI date.</h3>
+        <p id="acceleratorText">Increase your monthly investment to see how much earlier you could reach your target.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for educational planning only. This is not financial advice.</p>
+  </footer>
+
+  <script src="./calculator.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
