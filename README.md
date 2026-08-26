@@ -31,6 +31,7 @@ The calculator runs entirely in the browser and does not require a backend, fram
 
 ![FreedomPath Scenarios](./screenshot/fire-scenarios.png)
 
+### Access Live project here : https://freedom-path-fire-calculator.vercel.app/
 ---
 
 ## Features
